@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-27T12:10:33" hostname="ADMIN-PC" time="0.146">
+<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-27T14:05:22" hostname="ADMIN-PC" time="0.146">
   <properties/>
   <testcase name="start" classname="CinemaTests" time="0.146"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Cinema:
-1 2 3 4 5 6 7 8 
+  1 2 3 4 5 6 7 8 
 1 S S S S S S S S 
 2 S S S S S S S S 
 3 S S S S S S S S 
