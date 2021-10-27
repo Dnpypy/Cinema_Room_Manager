@@ -81,8 +81,11 @@ files:
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/709/implement#comment
-status: Solved
+status: Failed
 feedback:
-  message: Congratulations!
-  time: Wed, 27 Oct 2021 14:05:22 UTC
+  message: |-
+    Wrong answer in test #1
+
+    Expected 9 lines in the output!
+  time: Wed, 27 Oct 2021 14:21:07 UTC
 record: -1
