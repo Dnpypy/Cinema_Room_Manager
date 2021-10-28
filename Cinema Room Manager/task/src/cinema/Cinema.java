@@ -3,6 +3,7 @@ package cinema;
 public class Cinema {
 
     public static void main(String[] args) {
-        Moviemanager.createMatrixHall();
+        new Tickets();
+        Tickets.countingTickets();
     }
 }

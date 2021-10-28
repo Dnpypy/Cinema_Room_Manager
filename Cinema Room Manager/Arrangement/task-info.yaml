@@ -77,15 +77,12 @@ files:
         }
     }
   learner_created: false
-- name: src/cinema/Moviemanager.java
+- name: src/cinema/CreateHall.java
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/709/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #1
-
-    Expected 9 lines in the output!
-  time: Wed, 27 Oct 2021 14:21:07 UTC
-record: -1
+  message: Congratulations!
+  time: Thu, 28 Oct 2021 15:18:55 UTC
+record: 1

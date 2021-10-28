@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CinemaTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-27T14:21:07" hostname="ADMIN-PC" time="0.108">
+<testsuite name="CinemaTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-28T15:59:47" hostname="ADMIN-PC" time="0.112">
   <properties/>
-  <testcase name="start" classname="CinemaTests" time="0.108">
-    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Expected 9 lines in the output!" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+  <testcase name="start" classname="CinemaTests" time="0.112">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;At the beginning your program should ask for entering the number of rows.&#10;Your output should contain 'Enter the number of rows:'" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
-Expected 9 lines in the output!
+At the beginning your program should ask for entering the number of rows.
+Your output should contain 'Enter the number of rows:'
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -58,13 +59,6 @@ Expected 9 lines in the output!
   </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-
-
-
-
-
-
-
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
