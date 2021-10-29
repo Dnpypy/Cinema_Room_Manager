@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CinemaTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-28T15:59:47" hostname="ADMIN-PC" time="0.112">
+<testsuite name="CinemaTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-10-29T15:00:07" hostname="ADMIN-PC" time="0.123">
   <properties/>
-  <testcase name="start" classname="CinemaTests" time="0.112">
-    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;At the beginning your program should ask for entering the number of rows.&#10;Your output should contain 'Enter the number of rows:'" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+  <testcase name="start" classname="CinemaTests" time="0.123">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;You miscalculated the income.&#10;Correct one is $200&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Enter the number of rows:&#10;&gt; 4&#10;Enter the number of seats in each row:&#10;&gt; 5&#10;Total income:&#10;200$" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
-At the beginning your program should ask for entering the number of rows.
-Your output should contain 'Enter the number of rows:'
+You miscalculated the income.
+Correct one is $200
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Enter the number of rows:
+&gt; 4
+Enter the number of seats in each row:
+&gt; 5
+Total income:
+200$
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -59,6 +71,12 @@ Your output should contain 'Enter the number of rows:'
   </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
+Enter the number of rows:
+> 4
+Enter the number of seats in each row:
+> 5
+Total income:
+200$
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

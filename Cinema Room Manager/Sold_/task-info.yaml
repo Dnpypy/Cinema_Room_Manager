@@ -170,6 +170,22 @@ files:
 feedback_link: https://hyperskill.org/projects/133/stages/710/implement#comment
 status: Failed
 feedback:
-  message: Compilation Failed
-  time: Thu, 28 Oct 2021 17:25:02 UTC
+  message: |-
+    Wrong answer in test #1
+
+    You miscalculated the income.
+    Correct one is $200
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    Enter the number of rows:
+    &gt; 4
+    Enter the number of seats in each row:
+    &gt; 5
+    Total income:
+    200$
+  time: Fri, 29 Oct 2021 15:00:07 UTC
 record: -1
