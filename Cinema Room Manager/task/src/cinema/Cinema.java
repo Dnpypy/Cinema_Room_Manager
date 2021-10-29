@@ -2,10 +2,6 @@ package cinema;
 
 import java.util.Scanner;
 
-//import static cinema.CreateHall.createMatrixHall;
-//import static cinema.CreateHall.twoRowCol;
-//import static cinema.Tickets.countingTickets;
-
 public class Cinema {
 
     private static final Scanner sc = new Scanner(System.in);
@@ -15,7 +11,7 @@ public class Cinema {
         int row = sc.nextInt();
         System.out.println("Enter the number of seats in each row:");
         int col = sc.nextInt();
-        //System.out.println(col);
+
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
         String[][] arr = ch.twoRowCol(row, col);
@@ -23,6 +19,6 @@ public class Cinema {
         int a = tk.countingTickets(newArr);
 
         System.out.println("Total income:");
-        System.out.println(a + "$");
+        System.out.println("$" + a);
     }
 }

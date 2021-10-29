@@ -1,7 +1,5 @@
 package cinema;
 
-import static cinema.CreateHall.*;
-
 public class Tickets {
 
     private static final int limitSeats = 60;
@@ -34,12 +32,14 @@ public class Tickets {
             if (rowSize % 2 == 0) {
                oneHalfHall = rowSize / 2;
                twoHalfHall = rowSize - oneHalfHall;
-                allTicket = (oneHalfHall * ticketTen) * (twoHalfHall * ticketEight) * colSize;
-            } else if ((rowSize & 1) == 1) {
+                //
+                allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight);
+            } else if ((rowSize & 1) == 1) { // 7 rowSize  9 colSize
                 rowSize = rowSize - 1;
                 oneHalfHall = rowSize / 2;
                 twoHalfHall = rowSize - oneHalfHall;
-                allTicket = (oneHalfHall * ticketTen * colSize) * (twoHalfHall * ticketEight * colSize) * rowSize * colSize;
+                // allT = ( 3 * 10 * 9 = 270) + (3 * 9 * 8 = 216) + (9 * 8)
+                allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight) + (colSize * ticketEight);
             }
         }
         return allTicket;
