@@ -298,6 +298,99 @@ files:
         }
     }
   learner_created: false
+- name: src/cinema/CreateHall.java
+  visible: true
+  text: |
+    package cinema;
+
+    public class CreateHall {
+
+        public static final String SEAT = "S"; //  free seat
+
+
+        public static String[][] twoRowCol (int a, int b) {
+            return new String[a][b];
+        }
+
+        public static String[][] createMatrixHall(String[][] arr) {
+
+           // System.out.print("  ");
+
+            for (int a = 0; a <= arr.length; a++) {
+                //System.out.print((a + 1) + " ");
+            }
+
+           // System.out.println();
+
+            for (int i = 0; i < arr.length; i++) {
+               // System.out.print((i + 1) + " ");
+                for (int j = 0; j < arr[i].length; j++) {
+                    arr[i][j] = SEAT;
+                    //System.out.print(arr[i][j] + " ");
+                }
+               // System.out.println();
+            }
+            return arr;
+        }
+
+
+    }
+  learner_created: true
+- name: src/cinema/Tickets.java
+  visible: true
+  text: |
+    package cinema;
+
+    public class Tickets {
+
+        private static final int limitSeats = 60;
+
+        public static int totalNumberOfSeats(int a, int b) {
+            return a * b;
+        }
+
+        public static int countingTickets (String[][] arr) {
+
+            int rowSize = arr.length;
+            int colSize = arr[0].length;
+            int seats = totalNumberOfSeats(rowSize, colSize);
+            int ticketTen = 10;
+            int ticketEight = 8;
+            int allTicket = 0;
+
+            //  < 60
+            // Если общее количество мест в кинозале не более 60,
+            // то цена КАЖДОГО билета составляет 10 долларов.
+            if (seats < limitSeats) {
+                allTicket = ticketTen * seats;
+
+                // > 60  $10 and $8
+                //В более ПРОСТОРНОМ зале билеты стоят 10 долларов за переднюю половину рядов
+                // и 8 долларов за заднюю половину.
+            } else if (seats > limitSeats){
+                int oneHalfHall = 0;
+                int twoHalfHall = 0;
+                if (rowSize % 2 == 0) {
+                   oneHalfHall = rowSize / 2;
+                   twoHalfHall = rowSize - oneHalfHall;
+                    //
+                    allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight);
+                } else if ((rowSize & 1) == 1) { // 7 rowSize  9 colSize
+                    rowSize = rowSize - 1;
+                    oneHalfHall = rowSize / 2;
+                    twoHalfHall = rowSize - oneHalfHall;
+                    // allT = ( 3 * 10 * 9 = 270) + (3 * 9 * 8 = 216) + (9 * 8)
+                    allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight) + (colSize * ticketEight);
+                }
+            }
+            return allTicket;
+        }
+
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/711/implement#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: Failed to launch checking
+  time: Sat, 30 Oct 2021 15:18:11 UTC
+record: 3
