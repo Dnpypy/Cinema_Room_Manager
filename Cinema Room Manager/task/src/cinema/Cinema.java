@@ -12,7 +12,7 @@ public class Cinema {
     private static final Scanner sc = new Scanner(System.in);
     private static final String RESERVE = "B"; // резерв места = англ буква "B"
 
-    // переменная передается в класс Ticket
+    // переменная видимая в классе Ticket
     public static int rowSeatTicket = 0;
 
     public static void main(String[] args) {
@@ -25,10 +25,10 @@ public class Cinema {
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
 
-        // создаем зал с нужными рядами и местами
+        // Объявление зала с с количеством рядом и мест
         String[][] arr = ch.twoRowCol(row, col);
 
-        // подсчет стоимость всех билетов в зале
+        // подсчет стоимость всех билетов в зале и создания зала
         String[][] ticketArr = tk.countingTickets(ch.createMatrixHall(arr));
 
         System.out.println();

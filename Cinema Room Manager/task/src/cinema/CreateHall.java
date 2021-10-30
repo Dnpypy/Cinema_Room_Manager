@@ -2,7 +2,7 @@ package cinema;
 
 public class CreateHall {
 
-    public static final String SEAT = "S"; //  free seat
+    public static final String SEAT = "S";
 
     // Определения размера зала
     public static String[][] twoRowCol (int a, int b) {
