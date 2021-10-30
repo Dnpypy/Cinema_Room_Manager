@@ -6,14 +6,11 @@ import java.util.Scanner;
 import static cinema.Tickets.countingTickets;
 import static cinema.Tickets.ticketSeat;
 
-//import static cinema.Tickets.ticketPrice;
-
-
 
 public class Cinema {
 
     private static final Scanner sc = new Scanner(System.in);
-    private static final String RESERVE = "B"; //  reserve seat
+    private static final String RESERVE = "B"; // резерв места = англ буква "B"
 
     // переменная передается в класс Ticket
     public static int rowSeatTicket = 0;
@@ -31,7 +28,7 @@ public class Cinema {
         // создаем зал с нужными рядами и местами
         String[][] arr = ch.twoRowCol(row, col);
 
-        // подсчет стоимость билетов в зале
+        // подсчет стоимость всех билетов в зале
         String[][] ticketArr = tk.countingTickets(ch.createMatrixHall(arr));
 
         System.out.println();
@@ -42,13 +39,14 @@ public class Cinema {
         System.out.println("Enter a seat number in that row:");
         int m = sc.nextInt();
 
-        // переменная передается в класс Tickets
+        // переменнной присваивается номер ряда ---> class Tickets
         rowSeatTicket = n;
 
         // выбор свободного места в зале
         checkTicketSeat(ticketArr, n, m);
 
-        // чек на ряд чет или нечет
+        // вызов второй раз метод countingTickets, только для того,
+        // чтобы проверить билет на ряд чет или нечет(стоимость билета 10 или 8)
         countingTickets(ticketArr);
         System.out.println();
 
@@ -61,7 +59,7 @@ public class Cinema {
 
     }
 
-
+    // резерв места в зале "B"
     public static String[][] checkTicketSeat(String[][] seat, int a, int b) {
         a -= 1; b -= 1;
         for (int i = 0; i < seat.length; i++) {
@@ -75,6 +73,7 @@ public class Cinema {
         return seat;
     }
 
+    // вывод зала
     public static String[][] matrixOutput(String[][] arr) {
         System.out.println("Cinema:");
         System.out.print("  ");
