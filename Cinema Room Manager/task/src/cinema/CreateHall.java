@@ -2,14 +2,13 @@ package cinema;
 
 public class CreateHall {
 
-    public static final String SEAT = "S";
+    public static final String SEAT = "S"; //  free seat
 
-    // Определения размера зала
+
     public static String[][] twoRowCol (int a, int b) {
         return new String[a][b];
     }
 
-    // Создание зала
     public static String[][] createMatrixHall(String[][] arr) {
         System.out.println("Cinema:");
         System.out.print("  ");

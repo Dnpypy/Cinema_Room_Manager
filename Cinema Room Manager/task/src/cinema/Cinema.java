@@ -6,13 +6,16 @@ import java.util.Scanner;
 import static cinema.Tickets.countingTickets;
 import static cinema.Tickets.ticketSeat;
 
+//import static cinema.Tickets.ticketPrice;
+
+
 
 public class Cinema {
 
     private static final Scanner sc = new Scanner(System.in);
-    private static final String RESERVE = "B"; // резерв места = англ буква "B"
+    private static final String RESERVE = "B"; //  reserve seat
 
-    // переменная видимая в классе Ticket
+    // переменная передается в класс Ticket
     public static int rowSeatTicket = 0;
 
     public static void main(String[] args) {
@@ -25,10 +28,10 @@ public class Cinema {
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
 
-        // Объявление зала с с количеством рядом и мест
+        // создаем зал с нужными рядами и местами
         String[][] arr = ch.twoRowCol(row, col);
 
-        // подсчет стоимость всех билетов в зале и создания зала
+        // подсчет стоимость билетов в зале
         String[][] ticketArr = tk.countingTickets(ch.createMatrixHall(arr));
 
         System.out.println();
@@ -39,14 +42,13 @@ public class Cinema {
         System.out.println("Enter a seat number in that row:");
         int m = sc.nextInt();
 
-        // переменнной присваивается номер ряда ---> class Tickets
+        // переменная передается в класс Tickets
         rowSeatTicket = n;
 
         // выбор свободного места в зале
         checkTicketSeat(ticketArr, n, m);
 
-        // вызов второй раз метод countingTickets, только для того,
-        // чтобы проверить билет на ряд чет или нечет(стоимость билета 10 или 8)
+        // чек на ряд чет или нечет
         countingTickets(ticketArr);
         System.out.println();
 
@@ -59,7 +61,7 @@ public class Cinema {
 
     }
 
-    // резерв места в зале "B"
+
     public static String[][] checkTicketSeat(String[][] seat, int a, int b) {
         a -= 1; b -= 1;
         for (int i = 0; i < seat.length; i++) {
@@ -73,7 +75,6 @@ public class Cinema {
         return seat;
     }
 
-    // вывод зала
     public static String[][] matrixOutput(String[][] arr) {
         System.out.println("Cinema:");
         System.out.print("  ");

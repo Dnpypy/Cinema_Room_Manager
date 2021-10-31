@@ -4,21 +4,18 @@ import static cinema.Cinema.rowSeatTicket;
 
 public class Tickets {
 
-    // количество сидений после которого цена билетов изменяется < >
     private static final int limitSeats = 60;
-
-    // переменная для подсчета общей суммы билетов(в 3/5 не задействовано)
     public static int allTicket = 0;
 
     // передается стоимость билета в класс Cinema
     public static int ticketSeat = 0;
+    //public static boolean ticketPrice = true;
+    //public static int ticketPrice = 0;
 
-    // метод для подсчета общего количество мест в зале
     public static int totalNumberOfSeats(int a, int b) {
         return a * b;
     }
 
-    // Подсчет общей суммы $ билетов в зале
     public static String[][] countingTickets (String[][] arr) {
 
         int rowSize = arr.length;
@@ -47,7 +44,7 @@ public class Tickets {
                oneHalfHall = rowSize / 2;
                twoHalfHall = rowSize - oneHalfHall;
 
-                // стоимость билета первая половина рядом 10
+                // стоимость билета
                 ticketSeat = rowSeatTicket <= oneHalfHall ? 10 : 8;
 
                 allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight);
@@ -57,14 +54,14 @@ public class Tickets {
                 oneHalfHall = rowSize / 2;
                 twoHalfHall = rowSize - oneHalfHall;
 
-                // стоимость билета первая половина рядом 10
+                // стоимость билета
                 ticketSeat = rowSeatTicket <= oneHalfHall ? 10 : 8;
 
-                // Пример подсчета allT = ( 3 * 10 * 9 = 270) + (3 * 9 * 8 = 216) + (9 * 8)
+                // allT = ( 3 * 10 * 9 = 270) + (3 * 9 * 8 = 216) + (9 * 8)
                 allTicket = (oneHalfHall * ticketTen  * colSize) + (twoHalfHall *  colSize * ticketEight) + (colSize * ticketEight);
             }
         }
-        //return allTicket; в 3/5 не задействовано
+        //return allTicket;
         return arr;
     }
 
