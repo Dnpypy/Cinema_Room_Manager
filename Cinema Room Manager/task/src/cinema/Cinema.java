@@ -18,32 +18,74 @@ public class Cinema {
     public static int rowSeatTicket = 0;
 
     public static void main(String[] args) {
-        System.out.println("Enter the number of rows:");
-        int row = sc.nextInt();
-        System.out.println("Enter the number of seats in each row:");
-        int col = sc.nextInt();
-        System.out.println();
 
+        int row = getBasicRowsCount();
+        int col = getBasicSeatsInEachRowCount();
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
+
+        // создание зала
         String[][] arr = ch.twoRowCol(row, col);
-        String[][] cinema = tk.countingTickets(ch.createMatrixHall(arr));
+        arr = ch.createMatrixHall(arr);
 
+        // вывод меню
+        menuCinema();
+
+        int num;
+        boolean cinemaTr = true;
+
+   while (cinemaTr) {
+            num = sc.nextInt();
+            if (num == 1) {
+                matrixOutput(arr);
+                menuCinema();
+                //break outer;
+            } else if (num == 2) {
+                String[][] cinema = tk.countingTickets(arr);
+                System.out.println("Enter a row number:");
+                int n = sc.nextInt();
+                System.out.println("Enter a seat number in that row:");
+                int m = sc.nextInt();
+                rowSeatTicket = n;
+                checkTicketSeat(cinema, n, m);
+                countingTickets(cinema);
+                System.out.println();
+                System.out.println();
+                System.out.println("Ticket price: $" + ticketSeat + "\n");
+                menuCinema();
+            }  else if (num == 0) {
+                cinemaTr = false;
+            }
+        }
+
+
+    }
+    /**
+     * menuCinema output menu cinema
+     */
+    public static void menuCinema() {
+        System.out.println("1. Show the seats");
+        System.out.println("2. Buy a ticket");
+        System.out.println("0. Exit\n");
+    }
+
+    /**
+     * getRowsCount takes the initial value of the rows input
+     */
+    public static int getBasicRowsCount() {
+        System.out.print("Enter the number of rows:" + '\n');
+        int rowsCount = sc.nextInt();
+        return rowsCount;
+    }
+
+    /**
+     * getSeatsInEachRowCount takes the initial value of entering seats in rows
+     */
+    public static int getBasicSeatsInEachRowCount() {
+        System.out.print("Enter the number of seats in each row:" + '\n');
+        int seatsInEachRowCount = sc.nextInt();
         System.out.println();
-
-        System.out.println("Enter a row number:");
-        int n = sc.nextInt();
-        System.out.println("Enter a seat number in that row:");
-        int m = sc.nextInt();
-
-        rowSeatTicket = n;
-        checkTicketSeat(cinema, n, m);
-        countingTickets(cinema);
-        System.out.println();
-        matrixOutput(cinema);
-
-        System.out.println();
-        System.out.println("Ticket price: $" + ticketSeat + "\n");
+        return seatsInEachRowCount;
     }
 
     /**
@@ -66,10 +108,11 @@ public class Cinema {
     }
 
     /**
+     * matrixOutput output cinema hall
      * @param arr passed change a two-dimensional array with changed seats
      */
     public static void matrixOutput(String[][] arr) {
-        System.out.println("Cinema:");
+        System.out.println("\nCinema:");
         System.out.print("  ");
 
         for (int a = 0; a <= arr.length; a++) {

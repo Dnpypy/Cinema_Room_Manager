@@ -13,6 +13,11 @@ public class Tickets {
     public static int allTicket = 0;
     public static int ticketSeat = 0;
 
+    /**
+     * totalNumberOfSeats counting current all seats
+     * @param a row length
+     * @param b columns length
+     */
     public static int totalNumberOfSeats(int a, int b) {
         return a * b;
     }
