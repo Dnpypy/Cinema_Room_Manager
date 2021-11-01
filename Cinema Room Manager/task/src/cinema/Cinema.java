@@ -8,8 +8,13 @@ import static cinema.Tickets.ticketSeat;
 
 public class Cinema {
 
+    /**
+     * @value rowSeatTicket the variable is passed to the class Ticket
+     * @value RESERVE reserve seat
+     * @value sc the scanner was reading data from the console
+     */
     private static final Scanner sc = new Scanner(System.in);
-    private static final String RESERVE = "B"; //  reserve seat
+    private static final String RESERVE = "B";
     public static int rowSeatTicket = 0;
 
     public static void main(String[] args) {
@@ -21,19 +26,7 @@ public class Cinema {
 
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
-
-        /**
-         *  create rows col
-         * @param row rows
-         * @param col seats
-         */
         String[][] arr = ch.twoRowCol(row, col);
-
-        /**
-         *  cinema 2D Multi-dimensional array that represent a cinema.
-         * @param createMatrixHall(arr) the created hall
-         * @param countingTickets calculating the cost of tickets in the hall
-         */
         String[][] cinema = tk.countingTickets(ch.createMatrixHall(arr));
 
         System.out.println();
@@ -43,12 +36,6 @@ public class Cinema {
         System.out.println("Enter a seat number in that row:");
         int m = sc.nextInt();
 
-        /**
-         * @param rowSeatTicket the variable is passed to the class Ticket
-         * @param checkTicketSeat choosing a free seat in the hall
-         * @param countingTickets checking rows for a number of odd or even
-         * @param matrixOutput output hall
-         */
         rowSeatTicket = n;
         checkTicketSeat(cinema, n, m);
         countingTickets(cinema);
@@ -56,9 +43,7 @@ public class Cinema {
         matrixOutput(cinema);
 
         System.out.println();
-
         System.out.println("Ticket price: $" + ticketSeat + "\n");
-
     }
 
     /**
@@ -81,7 +66,7 @@ public class Cinema {
     }
 
     /**
-     * @param arr output change a two-dimensional array with changed seats
+     * @param arr passed change a two-dimensional array with changed seats
      */
     public static void matrixOutput(String[][] arr) {
         System.out.println("Cinema:");
@@ -100,8 +85,6 @@ public class Cinema {
             }
             System.out.println();
         }
-
-        //return arr;
     }
 
 
