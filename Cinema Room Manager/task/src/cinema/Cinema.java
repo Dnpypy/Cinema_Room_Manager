@@ -39,7 +39,6 @@ public class Cinema {
             if (num == 1) {
                 matrixOutput(arr);
                 menuCinema();
-                //break outer;
             } else if (num == 2) {
                 String[][] cinema = tk.countingTickets(arr);
                 System.out.println("Enter a row number:");
