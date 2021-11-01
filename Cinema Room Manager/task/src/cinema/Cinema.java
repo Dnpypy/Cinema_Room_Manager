@@ -28,14 +28,21 @@ public class Cinema {
         CreateHall ch = new CreateHall();
         Tickets tk = new Tickets();
 
-        // создаем зал с нужными рядами и местами
+        /**
+         *  create rows col
+         * @param row rows
+         * @param col seats
+         */
         String[][] arr = ch.twoRowCol(row, col);
 
-        // подсчет стоимость билетов в зале
-        String[][] ticketArr = tk.countingTickets(ch.createMatrixHall(arr));
+        /**
+         *  cinema 2D Multi-dimensional array that represent a cinema.
+         * @param createMatrixHall(arr) the created hall
+         * @param countingTickets calculating the cost of tickets in the hall
+         */
+        String[][] cinema = tk.countingTickets(ch.createMatrixHall(arr));
 
         System.out.println();
-
 
         System.out.println("Enter a row number:");
         int n = sc.nextInt();
@@ -46,14 +53,14 @@ public class Cinema {
         rowSeatTicket = n;
 
         // выбор свободного места в зале
-        checkTicketSeat(ticketArr, n, m);
+        checkTicketSeat(cinema, n, m);
 
         // чек на ряд чет или нечет
-        countingTickets(ticketArr);
+        countingTickets(cinema);
         System.out.println();
 
         // вывод зала
-        matrixOutput(ticketArr);
+        matrixOutput(cinema);
 
         System.out.println();
 
