@@ -6,16 +6,10 @@ import java.util.Scanner;
 import static cinema.Tickets.countingTickets;
 import static cinema.Tickets.ticketSeat;
 
-//import static cinema.Tickets.ticketPrice;
-
-
-
 public class Cinema {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final String RESERVE = "B"; //  reserve seat
-
-    // переменная передается в класс Ticket
     public static int rowSeatTicket = 0;
 
     public static void main(String[] args) {
@@ -49,17 +43,16 @@ public class Cinema {
         System.out.println("Enter a seat number in that row:");
         int m = sc.nextInt();
 
-        // переменная передается в класс Tickets
+        /**
+         * @param rowSeatTicket the variable is passed to the class Ticket
+         * @param checkTicketSeat choosing a free seat in the hall
+         * @param countingTickets checking rows for a number of odd or even
+         * @param matrixOutput output hall
+         */
         rowSeatTicket = n;
-
-        // выбор свободного места в зале
         checkTicketSeat(cinema, n, m);
-
-        // чек на ряд чет или нечет
         countingTickets(cinema);
         System.out.println();
-
-        // вывод зала
         matrixOutput(cinema);
 
         System.out.println();
@@ -68,7 +61,12 @@ public class Cinema {
 
     }
 
-
+    /**
+     * @param seat a two-dimensional array of an already created hall is transmitted
+     * @param a row number for the ticket
+     * @param b seat number for the ticket
+     * @return seat a two-dimensional array with a marked place
+     */
     public static String[][] checkTicketSeat(String[][] seat, int a, int b) {
         a -= 1; b -= 1;
         for (int i = 0; i < seat.length; i++) {
@@ -82,7 +80,10 @@ public class Cinema {
         return seat;
     }
 
-    public static String[][] matrixOutput(String[][] arr) {
+    /**
+     * @param arr output change a two-dimensional array with changed seats
+     */
+    public static void matrixOutput(String[][] arr) {
         System.out.println("Cinema:");
         System.out.print("  ");
 
@@ -100,7 +101,7 @@ public class Cinema {
             System.out.println();
         }
 
-        return arr;
+        //return arr;
     }
 
 
