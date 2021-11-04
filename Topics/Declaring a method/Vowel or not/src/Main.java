@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
 
     public static boolean isVowel(char ch) {
-        // write your code here
+        String candidates = "aeiouAEIOU";
+        return candidates.indexOf(ch) >= 0;
     }
 
     /* Do not change code below */

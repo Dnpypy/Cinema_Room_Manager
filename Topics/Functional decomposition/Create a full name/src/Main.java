@@ -6,11 +6,11 @@ class Name {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-    // use this program as a source of inspiration for your method
+        // use this program as a source of inspiration for your method
 
         String firstName1 = scanner.next();
         String lastName1 = scanner.next();
-        System.out.println(firstName1 + " " + lastName1);
+        System.out.println(createFullName(firstName1, lastName1));
 
         String firstName2 = scanner.next();
         String lastName2 = scanner.next();
@@ -23,5 +23,7 @@ class Name {
     }
 
     //implement your method here
-    public static String ...
+    public static String createFullName(String a, String b) {
+        return  a + " " + b;
+    }
 }
