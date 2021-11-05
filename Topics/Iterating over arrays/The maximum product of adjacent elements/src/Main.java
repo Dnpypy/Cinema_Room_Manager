@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 class Main {
@@ -6,37 +7,26 @@ class Main {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         int[] maxArr = new int[size];
-        int max1 = -9999;
-        int max2 = -9998;
-        int count = 0;
-
+        long max =  Integer.MIN_VALUE;
+        int outputMax1 = 0;
+        int outputMax2 = 0;
 
         for (int i = 0; i < maxArr.length; i++) {
             maxArr[i] = sc.nextInt();
-            if (maxArr[i] > max1 ) {
-                max1 = maxArr[i];
-                count = i;
-            }
-            if (maxArr[i] == max1) {
-                maxArr[i] = 0;
-            }
-            if (i == maxArr.length - 1) {
-                maxArr[count] = 0;
-            }
         }
 
         for (int i = 0; i < maxArr.length; i++) {
-            if (maxArr[i] > max2) {
-                max2 = maxArr[i];
+            if (i + 1 == maxArr.length) {
+                break;
             }
 
+            int temp = maxArr[i] * maxArr[i + 1];
+            if (temp > max) {
+                max = temp;
+                outputMax1 = maxArr[i];
+                outputMax2 = maxArr[i + 1];
+            }
         }
-
-//        for (Integer j : maxArr) {
-//            System.out.println(j + " ");
-//        }
-        System.out.println(max1 * max2);
-
-
+        System.out.println(outputMax1 * outputMax2);
     }
 }

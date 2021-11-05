@@ -5,3 +5,4 @@ content:
 - Primitive and reference types
 - Functional decomposition
 - Iterating over arrays
+- Arrays as parameters
