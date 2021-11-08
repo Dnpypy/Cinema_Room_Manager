@@ -40,6 +40,7 @@
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Check if an array is sorted ascending" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Count how many times a number occurs" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Cyclically shifting elements" />
+            <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Does an array contain N" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Individual taxes" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Right Rotation" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Sum array elements greater than a value" />
@@ -60,6 +61,8 @@
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/The star figure" />
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/The third row" />
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/Theory" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Theory" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Unknown input" />
             <option value="$PROJECT_DIR$/Topics/Primitive and reference types/Creating a primitive" />
             <option value="$PROJECT_DIR$/Topics/Primitive and reference types/Theory" />
             <option value="$PROJECT_DIR$/Topics/Switch statement/A simple calculator" />
@@ -74,6 +77,8 @@
             <option value="$PROJECT_DIR$/Topics/The main method/Print  Hello, Java_" />
             <option value="$PROJECT_DIR$/Topics/The main method/Print  We are robots_" />
             <option value="$PROJECT_DIR$/Topics/The main method/Theory" />
+            <option value="$PROJECT_DIR$/Topics/What is an exception/Avoid division by zero" />
+            <option value="$PROJECT_DIR$/Topics/What is an exception/Theory" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
