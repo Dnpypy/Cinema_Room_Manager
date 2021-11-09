@@ -12,6 +12,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Cinema Room Manager/task" />
+            <option value="$PROJECT_DIR$/Topics/Array exceptions/Calculate Square" />
+            <option value="$PROJECT_DIR$/Topics/Array exceptions/Theory" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/Adding values" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/Application as a class" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/Get first and last elements" />
@@ -25,6 +27,7 @@
             <option value="$PROJECT_DIR$/Topics/Branching statements/Theory" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Calculating factorials" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Division" />
+            <option value="$PROJECT_DIR$/Topics/Declaring a method/Find the max of three numbers" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Raise to the power" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Sum of numbers in the range" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/The sign of a number" />
@@ -61,6 +64,8 @@
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/The star figure" />
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/The third row" />
             <option value="$PROJECT_DIR$/Topics/Multidimensional array/Theory" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Avoid NPE" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Avoid NPE with strings" />
             <option value="$PROJECT_DIR$/Topics/NPE/Return empty string when argument is null" />
             <option value="$PROJECT_DIR$/Topics/NPE/Theory" />
             <option value="$PROJECT_DIR$/Topics/NPE/Unknown input" />
