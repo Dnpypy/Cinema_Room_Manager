@@ -12,10 +12,13 @@ public class Cinema {
      * @value rowSeatTicket the variable is passed to the class Ticket
      * @value RESERVE reserve seat
      * @value sc the scanner was reading data from the console
+     * @value @ticketFalse boolean false while checking tickets if same
      */
+
     private static final Scanner sc = new Scanner(System.in);
     private static final String RESERVE = "B";
     public static int rowSeatTicket = 0;
+    public static boolean ticketFalse = true;
 
     public static void main(String[] args) {
 
@@ -41,20 +44,29 @@ public class Cinema {
                 menuCinema();
             } else if (num == 2) {
                 String[][] cinema = tk.countingTickets(arr);
-                System.out.println("Enter a row number:");
+                System.out.println("\nEnter a row number:");
                 int n = sc.nextInt();
                 System.out.println("Enter a seat number in that row:");
                 int m = sc.nextInt();
                 rowSeatTicket = n;
-                checkTicketSeat(cinema, n, m);
+
+                // while
+                while (ticketFalse) {
+                    checkTicketSeat(cinema, n, m);
+                    //seatsCheckReserve(cinema);
+                }
                 countingTickets(cinema);
                 System.out.println();
                 System.out.println();
                 System.out.println("Ticket price: $" + ticketSeat + "\n");
                 menuCinema();
-            }  else if (num == 0) {
+            }  else if (num == 3) {
+                System.out.println(111);
+            } else if (num == 0) {
                 cinemaTr = false;
             }
+
+
         }
 
 
@@ -63,8 +75,9 @@ public class Cinema {
      * menuCinema output menu cinema
      */
     public static void menuCinema() {
-        System.out.println("1. Show the seats");
+        System.out.println("\n1. Show the seats");
         System.out.println("2. Buy a ticket");
+        System.out.println("3. Statistics");
         System.out.println("0. Exit\n");
     }
 
@@ -87,6 +100,22 @@ public class Cinema {
         return seatsInEachRowCount;
     }
 
+//    /**
+//     * @param seat a two-dimensional array of an already created hall is transmitted
+//     * @return seat a two-dimensional array with a marked place and find reserve seat
+//     */
+//    public static String[][] seatsCheckReserve(String[][] seat) {
+//        for (int i = 0; i < seat.length; i++) {
+//            for (int j = 0; j < seat[i].length; j++) {
+//                if (seat[i][j].equals(RESERVE)) {
+//                    System.out.println("\nThat ticket has already been purchased!");
+//                    ticketFalse = false;
+//                }
+//            }
+//        }
+//        return seat;
+//    }
+
     /**
      * @param seat a two-dimensional array of an already created hall is transmitted
      * @param a row number for the ticket
@@ -99,8 +128,12 @@ public class Cinema {
             for (int j = 0; j < seat[i].length; j++) {
                 if (seat[a][b] == seat[i][j]) {
                     seat[a][b] = RESERVE;
+                    ticketFalse = false;
                 }
 
+                if (seat[i][j] == RESERVE) {
+                    System.out.println("\nThat ticket has already been purchased!");
+                }
             }
         }
         return seat;

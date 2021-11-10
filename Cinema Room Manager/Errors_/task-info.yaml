@@ -709,5 +709,24 @@ files:
     }
   learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/713/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Wrong answer in test #3\n\nThe 3th line of the seating arrangement should\
+    \ contain &#39;B&#39; symbol.\n\nPlease find below the output of your program\
+    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
+    \ beginning of the input line.\n\n---\n\nEnter the number of rows:\n&gt; 7\nEnter\
+    \ the number of seats in each row:\n&gt; 8\n\n\n1. Show the seats\n2. Buy a ticket\n\
+    3. Statistics\n0. Exit\n\n&gt; 2\n\nEnter a row number:\n&gt; 2\nEnter a seat\
+    \ number in that row:\n&gt; 4\n\nThat ticket has already been purchased!\n\n\n\
+    Ticket price: $10\n\n\n1. Show the seats\n2. Buy a ticket\n3. Statistics\n0. Exit\n\
+    \n&gt; 1\n\nCinema:\n  1 2 3 4 5 6 7 8 \n1 S S S S S S S S \n2 S S S B S S S S\
+    \ \n3 S S S S S S S S \n4 S S S S S S S S \n5 S S S S S S S S \n6 S S S S S S\
+    \ S S \n7 S S S S S S S S \n\n1. Show the seats\n2. Buy a ticket\n3. Statistics\n\
+    0. Exit\n\n&gt; 2\n\nEnter a row number:\n&gt; 3\nEnter a seat number in that\
+    \ row:\n&gt; 5\n\n\nTicket price: $10\n\n\n1. Show the seats\n2. Buy a ticket\n\
+    3. Statistics\n0. Exit\n\n&gt; 1\n\nCinema:\n  1 2 3 4 5 6 7 8 \n1 S S S S S S\
+    \ S S \n2 S S S B S S S S \n3 S S S S S S S S \n4 S S S S S S S S \n5 S S S S\
+    \ S S S S \n6 S S S S S S S S \n7 S S S S S S S S \n\n1. Show the seats\n2. Buy\
+    \ a ticket\n3. Statistics\n0. Exit"
+  time: Wed, 10 Nov 2021 18:30:15 UTC
 record: -1
