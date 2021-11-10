@@ -5,8 +5,10 @@
 'Enter the number of seats in each row:
 > 8
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 0
@@ -17,8 +19,10 @@
 'Enter the number of seats in each row:
 > 8
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 1
@@ -32,8 +36,10 @@
 5 S S S S S S S S 
 6 S S S S S S S S 
 7 S S S S S S S S 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 Enter the number of rows:
@@ -41,8 +47,10 @@
 'Enter the number of seats in each row:
 > 2
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 1
@@ -52,8 +60,10 @@
   1 2 3 
 1 S S 
 2 S S 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 Enter the number of rows:
@@ -61,8 +71,10 @@
 'Enter the number of seats in each row:
 > 9
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 1
@@ -78,8 +90,10 @@
 7 S S S S S S S S S 
 8 S S S S S S S S S 
 9 S S S S S S S S S 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 0
@@ -90,21 +104,28 @@
 'Enter the number of seats in each row:
 > 8
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 2
+
 Enter a row number:
 > 2
 "Enter a seat number in that row:
 > 4
+
+)That ticket has already been purchased!
 
 
 Ticket price: $10
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 1
@@ -118,11 +139,14 @@
 5 S S S S S S S S 
 6 S S S S S S S S 
 7 S S S S S S S S 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 2
+
 Enter a row number:
 > 3
 "Enter a seat number in that row:
@@ -131,8 +155,10 @@
 
 Ticket price: $10
 
+
 1. Show the seats
 2. Buy a ticket
+3. Statistics
 0. Exit
 
 > 1
@@ -141,126 +167,14 @@
   1 2 3 4 5 6 7 8 
 1 S S S S S S S S 
 2 S S S B S S S S 
-3 S S S S B S S S 
+3 S S S S S S S S 
 4 S S S S S S S S 
 5 S S S S S S S S 
 6 S S S S S S S S 
 7 S S S S S S S S 
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-[1;31m
-Start test 4[0m
-Enter the number of rows:
-> 9
-'Enter the number of seats in each row:
-> 9
-
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 2
-Enter a row number:
-> 1
-"Enter a seat number in that row:
-> 1
-
-
-Ticket price: $10
-
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 2
-Enter a row number:
-> 4
-"Enter a seat number in that row:
-> 5
-
-
-Ticket price: $10
-
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 1
 
-	Cinema:
-  1 2 3 4 5 6 7 8 9 10 
-1 B S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S B S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
 1. Show the seats
 2. Buy a ticket
-0. Exit
-
-> 2
-Enter a row number:
-> 5
-"Enter a seat number in that row:
-> 5
-
-
-Ticket price: $8
-
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 1
-
-	Cinema:
-  1 2 3 4 5 6 7 8 9 10 
-1 B S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S B S S S S 
-5 S S S S B S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 2
-Enter a row number:
-> 6
-"Enter a seat number in that row:
-> 6
-
-
-Ticket price: $8
-
-1. Show the seats
-2. Buy a ticket
-0. Exit
-
-> 1
-
-	Cinema:
-  1 2 3 4 5 6 7 8 9 10 
-1 B S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S B S S S S 
-5 S S S S B S S S S 
-6 S S S S S B S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-1. Show the seats
-2. Buy a ticket
+3. Statistics
 0. Exit
 
