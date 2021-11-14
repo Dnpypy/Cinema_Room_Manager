@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-14T11:39:39" hostname="WIN-P3LIANORE34" time="1.384">
+<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-14T12:54:13" hostname="WIN-P3LIANORE34" time="1.219">
   <properties/>
-  <testcase name="start" classname="CinemaTests" time="1.384"/>
+  <testcase name="start" classname="CinemaTests" time="1.219"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Enter the number of rows:

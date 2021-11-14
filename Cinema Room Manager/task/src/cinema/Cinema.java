@@ -3,8 +3,8 @@ package cinema;
 
 import java.util.*;
 /**
- * create hall cinemasell tickets, check available seats, see sales statistics
- * @author Dnpypy
+ * Create hall cinema, sell tickets, check available seats, see sales statistics
+ * @author User 143077307
  */
 public class Cinema {
 
@@ -23,12 +23,12 @@ public class Cinema {
      * @value seats all seats in hall
      */
 
-    public static final String SEAT = "S";
+    public  static final String SEAT = "S";
     private static final String RESERVE = "B";
-    public static final int limitSeats = 60;
-    public static boolean flagReserve = true;
-    public static double perc = 0.00;
-    public static int seats = 0;
+    public  static final int limitSeats = 60;
+    public  static boolean flagReserve = true;
+    public  static double perc = 0.00;
+    public  static int seats = 0;
 
     /**
      * **************** tickets ******************
@@ -239,7 +239,7 @@ public class Cinema {
         var temp = 0;
         if (seats < limitSeats) {
             temp = ticketT;
-        } else {////
+        } else {
             int oneHalfHall = rowSize / 2;
             if (rowSeatTicket <= oneHalfHall) {
                 temp = ticketT;
@@ -309,8 +309,6 @@ public class Cinema {
 
             }
         }
-
-
     }
 
 }
