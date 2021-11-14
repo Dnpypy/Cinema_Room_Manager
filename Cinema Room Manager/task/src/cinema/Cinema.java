@@ -91,7 +91,6 @@ public class Cinema {
             num = sc.nextInt();
             if (num == 1) {
                 matrixOutput(arr);
-                menuCinema();
             } else if (num == 2) {
                 while (true) {
                     System.out.println("\nEnter a row number:");
@@ -114,15 +113,15 @@ public class Cinema {
                         break;
                     }
                 }
-                menuCinema();
+                //menuCinema();
             } else if (num == 3) {
                 printStatistics();
             } else if (num == 0) {
-                menuCinema();
                 tR = false;
             } else {
                 tR = false;
             }
+            menuCinema();
         }
     }
 
