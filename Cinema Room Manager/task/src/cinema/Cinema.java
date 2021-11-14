@@ -238,8 +238,6 @@ public class Cinema {
         var temp = 0;
         if (seats < limitSeats) {
             temp = ticketT;
-            System.out.println("\nTicket price: $" + temp);
-            ticketSeat += temp;
         } else {////
             int oneHalfHall = rowSize / 2;
             if (rowSeatTicket <= oneHalfHall) {
@@ -247,9 +245,9 @@ public class Cinema {
             } else {
                 temp = ticketE;
             }
-            System.out.println("\nTicket price: $" + temp);
-            ticketSeat += temp;
         }
+        System.out.println("\nTicket price: $" + temp);
+        ticketSeat += temp;
     }
 
     /**

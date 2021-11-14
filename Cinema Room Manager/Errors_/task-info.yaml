@@ -1,18 +1,6 @@
 type: edu
 custom_name: Errors!
 files:
-- name: src/cinema/Cinema.java
-  visible: true
-  text: |-
-    package cinema;
-
-    public class Cinema {
-
-        public static void main(String[] args) {
-            // Write your code here
-        }
-    }
-  learner_created: false
 - name: test/CinemaTests.java
   visible: false
   text: |
@@ -608,10 +596,22 @@ files:
         }
     }
   learner_created: false
+- name: src/cinema/Cinema.java
+  visible: true
+  text: |-
+    package cinema;
+
+    public class Cinema {
+
+        public static void main(String[] args) {
+            // Write your code here
+        }
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/133/stages/713/implement#comment
 status: Solved
 feedback:
   message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
     Academy</a> to continue learning.
-  time: Sun, 14 Nov 2021 10:17:44 UTC
+  time: Sun, 14 Nov 2021 10:26:52 UTC
 record: -1
