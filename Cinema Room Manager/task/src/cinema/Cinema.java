@@ -2,7 +2,10 @@ package cinema;
 
 
 import java.util.*;
-
+/**
+ * create hall cinemasell tickets, check available seats, see sales statistics
+ * @author Dnpypy
+ */
 public class Cinema {
 
     //************************************************************************//
@@ -150,7 +153,6 @@ public class Cinema {
 
     /**
      * matrixOutput output cinema hall
-     *
      * @param arr passed change a two-dimensional array with changed seats
      */
 
@@ -196,7 +198,7 @@ public class Cinema {
     }
 
     /**
-     * @param arr a hall without seats is transferred
+     * @param arr filling the hall empty seat
      */
     public static void createMatrixHall(String[][] arr) {
         for (String[] strings : arr) {
@@ -206,7 +208,6 @@ public class Cinema {
 
     /**
      * totalNumberOfSeats counting current all seats
-     *
      * @param a row length
      * @param b columns length
      */
@@ -215,7 +216,7 @@ public class Cinema {
     }
 
     /**
-     *
+     * @value allTicket output all ticket price
      */
     public static void countAllTicket() {
         if (row * col > limitSeats) {
@@ -297,7 +298,6 @@ public class Cinema {
                 break;
             }
             for (int j = 0; j < strings.length; j++) {
-
                 if (seat[a][b].equals(RESERVE)) {
                     System.out.println("\nThat ticket has already been purchased!\n");
                     flagReserve = false;
